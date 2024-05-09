@@ -1,0 +1,115 @@
+﻿@model IEnumerable<Papeleria.Models.Empleados>
+
+@{
+    ViewBag.Title = "Empleados";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Lista de Empleados</h2>
+
+<!--Se modifico para hacerlo boton-->
+<p>
+    @Html.ActionLink("Agregar nuevo empleado", "Create", null, new { @class = "btn btn-primary" })
+</p>
+
+<table class="table">
+    <tr>
+
+        <th>
+            Nombre completo
+        </th>
+
+        <!--<th>
+            @*Html.DisplayNameFor(model => model.Fecha_Nacimiento)*@
+        </th>-->
+        <th>
+            @Html.DisplayNameFor(model => model.Genero)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Direccion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ciudad)
+        </th>
+        <!--<th>
+            @*Html.DisplayNameFor(model => model.Pais)*@
+        </th>-->
+        <th>
+            @Html.DisplayNameFor(model => model.Telefono)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Correo_Electronico)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fecha_Contratacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Salario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Departamentos.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Puestos.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Horarios.Nombre_Turno)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre) @Html.DisplayFor(modelItem => item.Apellido_Paterno) @(item.Apellido_Materno != null ? item.Apellido_Materno : "")
+            </td>
+
+            <!--Comentado por si se necesita de nuevo <td>
+        @*Html.DisplayFor(modelItem => item.Fecha_Nacimiento)*@
+    </td>-->
+            <td>
+                @Html.DisplayFor(modelItem => item.Genero)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Direccion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ciudad)
+            </td>
+            <!--<td>
+        @*Html.DisplayFor(modelItem => item.Pais)*@
+    </td>-->
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefono)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Correo_Electronico)
+            </td>
+            <td>
+                @(item.Fecha_Contratacion.HasValue ? item.Fecha_Contratacion.Value.ToString("yyyy-MM-dd") : "")
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Salario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Departamentos.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Puestos.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Horarios.Nombre_Turno)
+            </td>
+
+            <td>
+                <!--Se modificaron los botones dentro de un div para que se apilen verticalmente y se agrego icono en lugar de texto-->
+                <div><a href="@Url.Action("Edit", new { id = item.ID_Empleado })" class="btn btn-warning"  title="Editar"><i class="fas fa-edit"></i><span class="sr-only">Editar</span></a></div>
+                <div><a href="@Url.Action("Details", new { id = item.ID_Empleado })" class="btn btn-primary" title="Información"><i class="fas fa-info-circle"></i><span class="sr-only">Detalles</span></a></div>
+                <div><a href="@Url.Action("Delete", new { id = item.ID_Empleado })" class="btn btn-danger" title="Borrar"><i class="fas fa-trash-alt"></i><span class="sr-only">Borrar</span></a></div>
+            </td>
+        </tr>
+    }
+
+</table>

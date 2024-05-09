@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Models",
+    "\\Views",
+    "\\Views\\Departamentos",
+    "\\Views\\Empleados",
+    "\\Views\\Evaluaciones_Desempeno"
+  ],
+  "SelectedNode": "\\Views\\Empleados\\Index.cshtml",
+  "PreviewInSolutionExplorer": false
+}

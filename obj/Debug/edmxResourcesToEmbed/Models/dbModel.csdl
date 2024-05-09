@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GestionPapeleriaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Departamentos">
+    <Key>
+      <PropertyRef Name="ID_Departamento" />
+    </Key>
+    <Property Name="ID_Departamento" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Puestos" Relationship="Self.FK__Puestos__ID_Depa__0F624AF8" FromRole="Departamentos" ToRole="Puestos" />
+    <NavigationProperty Name="Empleados" Relationship="Self.FK_Departamento_Empleado" FromRole="Departamentos" ToRole="Empleados" />
+  </EntityType>
+  <EntityType Name="Empleados">
+    <Key>
+      <PropertyRef Name="ID_Empleado" />
+    </Key>
+    <Property Name="ID_Empleado" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Apellido_Paterno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Apellido_Materno" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Fecha_Nacimiento" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="Genero" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="Direccion" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Ciudad" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Pais" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Correo_Electronico" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Fecha_Contratacion" Type="DateTime" Precision="0" />
+    <Property Name="Salario" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="ID_Departamento" Type="Int32" Nullable="false" />
+    <Property Name="ID_Puesto" Type="Int32" Nullable="false" />
+    <Property Name="ID_Turno" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Departamentos" Relationship="Self.FK_Departamento_Empleado" FromRole="Empleados" ToRole="Departamentos" />
+    <NavigationProperty Name="Evaluaciones_Desempeno" Relationship="Self.FK_Empleado_Evaluacion" FromRole="Empleados" ToRole="Evaluaciones_Desempeno" />
+    <NavigationProperty Name="Puestos" Relationship="Self.FK_Puesto_Empleado" FromRole="Empleados" ToRole="Puestos" />
+    <NavigationProperty Name="Horarios" Relationship="Self.FK_Turno_Empleado" FromRole="Empleados" ToRole="Horarios" />
+  </EntityType>
+  <EntityType Name="Evaluaciones_Desempeno">
+    <Key>
+      <PropertyRef Name="ID_Evaluacion" />
+    </Key>
+    <Property Name="ID_Evaluacion" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_Empleado" Type="Int32" Nullable="false" />
+    <Property Name="Mes_Evaluacion" Type="DateTime" Precision="0" />
+    <Property Name="Calificacion" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="Comentarios" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Empleados" Relationship="Self.FK_Empleado_Evaluacion" FromRole="Evaluaciones_Desempeno" ToRole="Empleados" />
+  </EntityType>
+  <EntityType Name="Horarios">
+    <Key>
+      <PropertyRef Name="ID_Turno" />
+    </Key>
+    <Property Name="ID_Turno" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nombre_Turno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Dias_Semana" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Hora_Inicio" Type="Time" Nullable="false" Precision="7" />
+    <Property Name="Hora_Fin" Type="Time" Nullable="false" Precision="7" />
+    <NavigationProperty Name="Empleados" Relationship="Self.FK_Turno_Empleado" FromRole="Horarios" ToRole="Empleados" />
+  </EntityType>
+  <EntityType Name="Puestos">
+    <Key>
+      <PropertyRef Name="ID_Puesto" />
+    </Key>
+    <Property Name="ID_Puesto" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ID_Departamento" Type="Int32" Nullable="false" />
+    <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Descripcion" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Salario_Base" Type="Decimal" Precision="10" Scale="2" />
+    <NavigationProperty Name="Departamentos" Relationship="Self.FK__Puestos__ID_Depa__0F624AF8" FromRole="Puestos" ToRole="Departamentos" />
+    <NavigationProperty Name="Empleados" Relationship="Self.FK_Puesto_Empleado" FromRole="Puestos" ToRole="Empleados" />
+  </EntityType>
+  <Association Name="FK__Puestos__ID_Depa__0F624AF8">
+    <End Role="Departamentos" Type="Self.Departamentos" Multiplicity="1" />
+    <End Role="Puestos" Type="Self.Puestos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departamentos">
+        <PropertyRef Name="ID_Departamento" />
+      </Principal>
+      <Dependent Role="Puestos">
+        <PropertyRef Name="ID_Departamento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Departamento_Empleado">
+    <End Role="Departamentos" Type="Self.Departamentos" Multiplicity="1" />
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departamentos">
+        <PropertyRef Name="ID_Departamento" />
+      </Principal>
+      <Dependent Role="Empleados">
+        <PropertyRef Name="ID_Departamento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Empleado_Evaluacion">
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="1" />
+    <End Role="Evaluaciones_Desempeno" Type="Self.Evaluaciones_Desempeno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleados">
+        <PropertyRef Name="ID_Empleado" />
+      </Principal>
+      <Dependent Role="Evaluaciones_Desempeno">
+        <PropertyRef Name="ID_Empleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Puesto_Empleado">
+    <End Role="Puestos" Type="Self.Puestos" Multiplicity="1" />
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Puestos">
+        <PropertyRef Name="ID_Puesto" />
+      </Principal>
+      <Dependent Role="Empleados">
+        <PropertyRef Name="ID_Puesto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Turno_Empleado">
+    <End Role="Horarios" Type="Self.Horarios" Multiplicity="1" />
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Horarios">
+        <PropertyRef Name="ID_Turno" />
+      </Principal>
+      <Dependent Role="Empleados">
+        <PropertyRef Name="ID_Turno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DbModels" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Departamentos" EntityType="Self.Departamentos" />
+    <EntitySet Name="Empleados" EntityType="Self.Empleados" />
+    <EntitySet Name="Evaluaciones_Desempeno" EntityType="Self.Evaluaciones_Desempeno" />
+    <EntitySet Name="Horarios" EntityType="Self.Horarios" />
+    <EntitySet Name="Puestos" EntityType="Self.Puestos" />
+    <AssociationSet Name="FK__Puestos__ID_Depa__0F624AF8" Association="Self.FK__Puestos__ID_Depa__0F624AF8">
+      <End Role="Departamentos" EntitySet="Departamentos" />
+      <End Role="Puestos" EntitySet="Puestos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Departamento_Empleado" Association="Self.FK_Departamento_Empleado">
+      <End Role="Departamentos" EntitySet="Departamentos" />
+      <End Role="Empleados" EntitySet="Empleados" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Empleado_Evaluacion" Association="Self.FK_Empleado_Evaluacion">
+      <End Role="Empleados" EntitySet="Empleados" />
+      <End Role="Evaluaciones_Desempeno" EntitySet="Evaluaciones_Desempeno" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Puesto_Empleado" Association="Self.FK_Puesto_Empleado">
+      <End Role="Puestos" EntitySet="Puestos" />
+      <End Role="Empleados" EntitySet="Empleados" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Turno_Empleado" Association="Self.FK_Turno_Empleado">
+      <End Role="Horarios" EntitySet="Horarios" />
+      <End Role="Empleados" EntitySet="Empleados" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

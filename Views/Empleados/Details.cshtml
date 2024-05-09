@@ -1,0 +1,144 @@
+﻿@model Papeleria.Models.Empleados
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Detalles del empleado</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Apellido_Paterno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Apellido_Paterno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Apellido_Materno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Apellido_Materno)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_Nacimiento)
+        </dt>
+
+        <dd>
+            @Model.Fecha_Nacimiento.ToString("yyyy-MM-dd")
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Genero)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Genero)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Direccion)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Direccion)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ciudad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ciudad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Pais)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Pais)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Telefono)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Telefono)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Correo_Electronico)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Correo_Electronico)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Fecha_Contratacion)
+        </dt>
+
+        <dd>
+            @(Model.Fecha_Contratacion.HasValue ? Model.Fecha_Contratacion.Value.ToString("yyyy-MM-dd") : "")
+        </dd>
+
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Salario)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Salario)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Departamentos.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Departamentos.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Puestos.Nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Puestos.Nombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Horarios.Nombre_Turno)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Horarios.Nombre_Turno)
+        </dd>
+
+    </dl>
+</div>
+
+<div class="mt-3">
+    <a href="@Url.Action("Edit", new { id = Model.ID_Empleado })" class="btn btn-warning" title="Editar"><i class="fas fa-edit"></i><span class="sr-only">Edit</span></a>
+</div>
+
+<div class="mt-3">
+    <a href="@Url.Action("Index")" class="btn btn-primary" title="Regresar"><i class="fas fa-arrow-left"></i><span class="sr-only">Regresar</span></a>
+</div>

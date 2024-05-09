@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="GestionPapeleriaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Departamentos">
+    <Key>
+      <PropertyRef Name="ID_Departamento" />
+    </Key>
+    <Property Name="ID_Departamento" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Descripcion" Type="text" />
+  </EntityType>
+  <EntityType Name="Empleados">
+    <Key>
+      <PropertyRef Name="ID_Empleado" />
+    </Key>
+    <Property Name="ID_Empleado" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Apellido_Paterno" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Apellido_Materno" Type="varchar" MaxLength="50" />
+    <Property Name="Fecha_Nacimiento" Type="date" Nullable="false" />
+    <Property Name="Genero" Type="varchar" MaxLength="10" />
+    <Property Name="Direccion" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Ciudad" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Pais" Type="varchar" MaxLength="50" />
+    <Property Name="Telefono" Type="varchar" MaxLength="20" />
+    <Property Name="Correo_Electronico" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Fecha_Contratacion" Type="date" />
+    <Property Name="Salario" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+    <Property Name="ID_Departamento" Type="int" Nullable="false" />
+    <Property Name="ID_Puesto" Type="int" Nullable="false" />
+    <Property Name="ID_Turno" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Evaluaciones_Desempeno">
+    <Key>
+      <PropertyRef Name="ID_Evaluacion" />
+    </Key>
+    <Property Name="ID_Evaluacion" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_Empleado" Type="int" Nullable="false" />
+    <Property Name="Mes_Evaluacion" Type="date" />
+    <Property Name="Calificacion" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+    <Property Name="Comentarios" Type="text" />
+  </EntityType>
+  <EntityType Name="Horarios">
+    <Key>
+      <PropertyRef Name="ID_Turno" />
+    </Key>
+    <Property Name="ID_Turno" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre_Turno" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="Dias_Semana" Type="varchar" MaxLength="20" />
+    <Property Name="Hora_Inicio" Type="time" Precision="7" Nullable="false" />
+    <Property Name="Hora_Fin" Type="time" Precision="7" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Puestos">
+    <Key>
+      <PropertyRef Name="ID_Puesto" />
+    </Key>
+    <Property Name="ID_Puesto" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ID_Departamento" Type="int" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Descripcion" Type="text" Nullable="false" />
+    <Property Name="Salario_Base" Type="decimal" Precision="10" Scale="2" />
+  </EntityType>
+  <Association Name="FK__Puestos__ID_Depa__0F624AF8">
+    <End Role="Departamentos" Type="Self.Departamentos" Multiplicity="1" />
+    <End Role="Puestos" Type="Self.Puestos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departamentos">
+        <PropertyRef Name="ID_Departamento" />
+      </Principal>
+      <Dependent Role="Puestos">
+        <PropertyRef Name="ID_Departamento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Departamento_Empleado">
+    <End Role="Departamentos" Type="Self.Departamentos" Multiplicity="1" />
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departamentos">
+        <PropertyRef Name="ID_Departamento" />
+      </Principal>
+      <Dependent Role="Empleados">
+        <PropertyRef Name="ID_Departamento" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Empleado_Evaluacion">
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="1" />
+    <End Role="Evaluaciones_Desempeno" Type="Self.Evaluaciones_Desempeno" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleados">
+        <PropertyRef Name="ID_Empleado" />
+      </Principal>
+      <Dependent Role="Evaluaciones_Desempeno">
+        <PropertyRef Name="ID_Empleado" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Puesto_Empleado">
+    <End Role="Puestos" Type="Self.Puestos" Multiplicity="1" />
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Puestos">
+        <PropertyRef Name="ID_Puesto" />
+      </Principal>
+      <Dependent Role="Empleados">
+        <PropertyRef Name="ID_Puesto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Turno_Empleado">
+    <End Role="Horarios" Type="Self.Horarios" Multiplicity="1" />
+    <End Role="Empleados" Type="Self.Empleados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Horarios">
+        <PropertyRef Name="ID_Turno" />
+      </Principal>
+      <Dependent Role="Empleados">
+        <PropertyRef Name="ID_Turno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="GestionPapeleriaModelStoreContainer">
+    <EntitySet Name="Departamentos" EntityType="Self.Departamentos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Empleados" EntityType="Self.Empleados" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Evaluaciones_Desempeno" EntityType="Self.Evaluaciones_Desempeno" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Horarios" EntityType="Self.Horarios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Puestos" EntityType="Self.Puestos" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Puestos__ID_Depa__0F624AF8" Association="Self.FK__Puestos__ID_Depa__0F624AF8">
+      <End Role="Departamentos" EntitySet="Departamentos" />
+      <End Role="Puestos" EntitySet="Puestos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Departamento_Empleado" Association="Self.FK_Departamento_Empleado">
+      <End Role="Departamentos" EntitySet="Departamentos" />
+      <End Role="Empleados" EntitySet="Empleados" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Empleado_Evaluacion" Association="Self.FK_Empleado_Evaluacion">
+      <End Role="Empleados" EntitySet="Empleados" />
+      <End Role="Evaluaciones_Desempeno" EntitySet="Evaluaciones_Desempeno" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Puesto_Empleado" Association="Self.FK_Puesto_Empleado">
+      <End Role="Puestos" EntitySet="Puestos" />
+      <End Role="Empleados" EntitySet="Empleados" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Turno_Empleado" Association="Self.FK_Turno_Empleado">
+      <End Role="Horarios" EntitySet="Horarios" />
+      <End Role="Empleados" EntitySet="Empleados" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Papeleria.Models.Evaluaciones_Desempeno>
+
+@{
+    ViewBag.Title = "Evaluaciones";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Evaluaciones</h2>
+
+<p>
+    @Html.ActionLink("Evaluar empleados", "Create", null, new { @class = "btn btn-primary" })
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Empleados.Nombre)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Mes_Evaluacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Calificacion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Comentarios)
+        </th>
+
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Empleados.Nombre) @Html.DisplayFor(modelItem => item.Empleados.Apellido_Paterno)
+        </td>
+
+        <td>
+            @item.Mes_Evaluacion.Value.ToString("yyyy-MM-dd")
+        </td>
+
+
+        <td>
+            @Html.DisplayFor(modelItem => item.Calificacion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Comentarios)
+        </td>
+
+        <td>
+            <div><a href="@Url.Action("Edit", new { id = item.ID_Evaluacion })" class="btn btn-warning" title="Editar"><i class="fas fa-edit"></i><span class="sr-only">Editar</span></a></div>
+            <div><a href="@Url.Action("Details", new { id = item.ID_Evaluacion })" class="btn btn-primary" title="Información"><i class="fas fa-info-circle"></i><span class="sr-only">Detalles</span></a></div>
+            <div><a href="@Url.Action("Delete", new { id = item.ID_Evaluacion })" class="btn btn-danger" title="Borrar"><i class="fas fa-trash-alt"></i><span class="sr-only">Borrar</span></a></div>
+        </td>
+    </tr>
+}
+
+</table>

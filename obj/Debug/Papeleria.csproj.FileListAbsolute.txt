@@ -1,0 +1,180 @@
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\Papeleria.dll.config
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\Papeleria.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\Papeleria.pdb
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\csc.exe
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\csc.exe.config
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\csc.rsp
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\csi.exe
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\csi.exe.config
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\csi.rsp
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\System.AppContext.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\System.Console.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\System.IO.Compression.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\System.Net.Http.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\System.Net.Sockets.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\System.ValueTuple.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\System.Xml.XPath.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\vbc.exe
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\vbc.exe.config
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\vbc.rsp
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\VBCSCompiler.exe
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\Antlr3.Runtime.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\EntityFramework.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\EntityFramework.SqlServer.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\Newtonsoft.Json.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\System.Web.Helpers.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\System.Web.Mvc.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\System.Web.Optimization.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\System.Web.Razor.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\System.Web.WebPages.Deployment.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\System.Web.WebPages.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\System.Web.WebPages.Razor.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\WebGrease.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\EntityFramework.xml
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\EntityFramework.SqlServer.xml
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\System.Web.Helpers.xml
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\System.Web.Mvc.xml
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\System.Web.Optimization.xml
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\System.Web.Razor.xml
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\System.Web.WebPages.xml
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\System.Web.WebPages.Deployment.xml
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\System.Web.WebPages.Razor.xml
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\Newtonsoft.Json.xml
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\Antlr3.Runtime.pdb
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\es\System.Web.Helpers.resources.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\es\System.Web.Mvc.resources.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\es\System.Web.Optimization.resources.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\es\System.Web.Razor.resources.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\es\System.Web.WebPages.resources.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\obj\Debug\Papeleria.csproj.AssemblyReference.cache
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\obj\Debug\Papeleria.csproj.CoreCompileInputs.cache
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\obj\Debug\Papeleria.csproj.Up2Date
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\obj\Debug\Papeleria.dll
+C:\Users\alex_\Documents\.NET\PapeperliaCrud\Papeleria\obj\Debug\Papeleria.pdb
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\Papeleria.dll.config
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\Papeleria.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\Papeleria.pdb
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\csc.exe
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\csc.exe.config
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\csc.rsp
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\csi.exe
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\csi.exe.config
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\csi.rsp
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\System.AppContext.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\System.Console.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\System.IO.Compression.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\System.Net.Http.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\System.Net.Sockets.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\System.ValueTuple.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\System.Xml.XPath.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\vbc.exe
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\vbc.exe.config
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\vbc.rsp
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\VBCSCompiler.exe
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\Antlr3.Runtime.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\EntityFramework.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\EntityFramework.SqlServer.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\Newtonsoft.Json.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\System.Web.Helpers.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\System.Web.Mvc.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\System.Web.Optimization.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\System.Web.Razor.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\System.Web.WebPages.Deployment.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\System.Web.WebPages.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\System.Web.WebPages.Razor.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\WebGrease.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\EntityFramework.xml
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\EntityFramework.SqlServer.xml
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\System.Web.Helpers.xml
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\System.Web.Mvc.xml
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\System.Web.Optimization.xml
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\System.Web.Razor.xml
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\System.Web.WebPages.xml
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\System.Web.WebPages.Deployment.xml
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\System.Web.WebPages.Razor.xml
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\Newtonsoft.Json.xml
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\Antlr3.Runtime.pdb
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\es\System.Web.Helpers.resources.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\es\System.Web.Mvc.resources.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\es\System.Web.Optimization.resources.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\es\System.Web.Razor.resources.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\es\System.Web.WebPages.resources.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\es\System.Web.WebPages.Deployment.resources.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\bin\es\System.Web.WebPages.Razor.resources.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\obj\Debug\Papeleria.csproj.AssemblyReference.cache
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\obj\Debug\Papeleria.csproj.CoreCompileInputs.cache
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\obj\Debug\Papeleria.csproj.Up2Date
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\obj\Debug\Papeleria.dll
+C:\Users\galla\OneDrive - uaz.edu.mx\Documentos\4ToSemestre\Proyecto.NET\Papeleria\Papeleria\obj\Debug\Papeleria.pdb

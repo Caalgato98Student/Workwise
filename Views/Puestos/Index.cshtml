@@ -1,0 +1,54 @@
+﻿@model IEnumerable<Papeleria.Models.Puestos>
+
+@{
+    ViewBag.Title = "Puestos";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Puestos</h2>
+
+<p>
+    @Html.ActionLink("Agregar nuevo puesto", "Create", null, new { @class = "btn btn-primary" })
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Descripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Salario_Base)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Departamentos.Nombre)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Descripcion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Salario_Base)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Departamentos.Nombre)
+        </td>
+        <td>
+            <!--Se modificaron los botones dentro de un div para que se apilen verticalmente y se agrego icono en lugar de texto-->
+            <div><a href="@Url.Action("Edit", new { id = item.ID_Puesto })" class="btn btn-warning" title="Editar"><i class="fas fa-edit"></i><span class="sr-only">Editar</span></a></div>
+            <div><a href="@Url.Action("Details", new { id = item.ID_Puesto })" class="btn btn-primary" title="Información"><i class="fas fa-info-circle"></i><span class="sr-only">Detalles</span></a></div>
+            <div><a href="@Url.Action("Delete", new { id = item.ID_Puesto })" class="btn btn-danger" title="Borrar"><i class="fas fa-trash-alt"></i><span class="sr-only">Borrar</span></a></div>
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - WorkWise</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <!--Iconos para botones CRUD-->
+    <link rel="icon" href="~/Images/icono.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="@Url.Action("Index", "Empleados")">
+                <img src="~/Images/icono.ico" alt="workwise" width="30" height="30" class="d-inline-block align-text-top">
+                Workwise
+            </a>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Alternar navegación" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li>@Html.ActionLink("Empleados", "Index", "Empleados", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Departamentos", "Index", "Departamentos", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Puestos", "Index", "Puestos", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Horarios", "Index", "Horarios", new { area = "" }, new { @class = "nav-link" })</li>
+                    <li>@Html.ActionLink("Evaluaciones", "Index", "Evaluaciones_Desempeno", new { area = "" }, new { @class = "nav-link" })</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - WorkWise | Created by Equipo 4</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
